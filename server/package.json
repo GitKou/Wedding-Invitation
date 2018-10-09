@@ -10,11 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/lodash": "^4.14.116",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "graphql": "^0.13.2",
     "loadsh": "^1.0.1",
+    "lodash.isnil": "^4.0.0",
+    "lodash.omitby": "^4.6.0",
     "mongoose": "^5.2.7"
   },
   "devDependencies": {

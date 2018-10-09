@@ -7,7 +7,7 @@ import {
     GraphQLBoolean
 } from 'graphql';
 import { RSVP } from '../models/rsvp';
-
+import { omitBy, isNil } from 'lodash'
 
 
 const RSVPType = new GraphQLObjectType({
@@ -34,24 +34,45 @@ let QueryFields = {
         args: {
             guestName: {
                 type: GraphQLString
-            }
-        },
-        resolve(parent, args) {
-            return RSVP.find({ guestName: args.guestName });
-        }
-    },
-    rsvps: {
-        type: new GraphQLList(RSVPType),
-        args: {
+            },
             isPresent: {
                 type: GraphQLBoolean
+
             },
             numberOfAttendance: {
                 type: GraphQLInt
             }
         },
         resolve(parent, args) {
-            return RSVP.find({ isPresent: args.isPresent, numberOfAttendance: args.numberOfAttendance })
+            let param = {
+                guestName: args.guestName,
+                isPresent: args.isPresent,
+                numberOfAttendance: args.numberOfAttendance
+            };
+            return RSVP.find(omitBy(param, isNil));
+        }
+    },
+    rsvps: {
+        type: new GraphQLList(RSVPType),
+        args: {
+            guestName: {
+                type: GraphQLString
+            },
+            isPresent: {
+                type: GraphQLBoolean
+
+            },
+            numberOfAttendance: {
+                type: GraphQLInt
+            }
+        },
+        resolve(parent, args) {
+            let param = {
+                guestName: args.guestName,
+                isPresent: args.isPresent,
+                numberOfAttendance: args.numberOfAttendance
+            };
+            return RSVP.find(omitBy(param, isNil));
         }
     },
     attendances: {
@@ -87,7 +108,8 @@ let MutationFields = {
                 isPresent: args.isPresent,
                 numberOfAttendance: args.numberOfAttendance,
             });
-            return rsvp.save();
+            if (RSVP.findOne({ guestName: args.guestName }))
+                return rsvp.save();
         }
     }
 }
