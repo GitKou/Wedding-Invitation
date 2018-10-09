@@ -2,7 +2,7 @@ import * as express from 'express';
 import * as graphqlHTTP from 'express-graphql';
 import { Schema } from './schema/schema';
 import * as mongoose from 'mongoose';
-import { cors } from 'cors';
+import * as  cors from 'cors';
 import * as  fs from 'fs';
 import * as path from 'path';
 

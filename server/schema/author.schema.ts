@@ -8,7 +8,7 @@ import {
 } from 'graphql';
 import { Author } from '../models/author';
 
-const AuthorType = new GraphQLObjectType({
+const AuthorType: GraphQLObjectType = new GraphQLObjectType({
     name: 'Author',
     fields: () => {
         return {
