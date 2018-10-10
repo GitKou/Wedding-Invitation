@@ -83,7 +83,7 @@ let QueryFields = {
             }
         },
         resolve(parent, args) {
-            return RSVP.find({ isPresent: args.isPresent });
+            return RSVP.countDocuments({ isPresent: args.isPresent });
         }
     }
 }
