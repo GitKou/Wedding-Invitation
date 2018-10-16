@@ -7,7 +7,8 @@ import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 
 // components
-// import AuthorList from './components / AuthorList'
+import AlbumFLow from './components/AblumFLow';
+import AuthorList from './components/AuthorList'
 
 
 
@@ -21,6 +22,8 @@ class App extends React.Component {
     return (
       <ApolloProvider client={client} >
         <span>333</span>
+        <AuthorList />
+        <AlbumFLow />>
       </ApolloProvider >
     );
   }
