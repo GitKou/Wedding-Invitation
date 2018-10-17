@@ -1,29 +1,28 @@
 import {
-    gql
+  gql
 } from 'apollo-boost';
 
-const getAuthorsQuery = gql `
-    {
-        authors{
-        name
-        id
-        age
-        }
+const getWishesQuery = gql `
+  {
+    wishes{
+      guestName
+      message
+    }
   }
 `
 
-const addAuthorMutation = gql `
-mutation($name: String!, $age: Int!){
-    addAuthor(name: $name, age: $age){
-        name
-        age
+const addWishMutation = gql `
+mutation AddWish($guestName: String!, $message: String!) {
+    addWish(guestName: $guestName, message: $message) {
+      guestName
+      message
     }
-}
+  }    
 `
 
 
 
 export {
-    getAuthorsQuery,
-    addAuthorMutation,
+  getWishesQuery,
+  addWishMutation,
 }

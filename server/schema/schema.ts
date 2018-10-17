@@ -1,13 +1,13 @@
 import {
-    graphql,
     GraphQLObjectType,
     GraphQLSchema
 } from 'graphql';
 import { AuthorSchema } from './author.schema';
-import { RSVPSchema } from './rsvp.schema';
+import { RsvpSchema } from './rsvp.schema';
+import { WishSchema } from './wish.schema';
 
 
-let schemas = [AuthorSchema, RSVPSchema]
+let schemas = [AuthorSchema, RsvpSchema, WishSchema]
 
 let QueryFieldArray = schemas.map(item => item.QueryFields)
 let MutationFieldArray = schemas.map(item => item.MutationFields)

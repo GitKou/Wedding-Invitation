@@ -8,7 +8,7 @@ import { ApolloProvider } from 'react-apollo'
 
 // components
 import AlbumFLow from './components/AblumFLow';
-import AuthorList from './components/AuthorList'
+import WishList from './components/WishList'
 
 
 
@@ -21,9 +21,8 @@ class App extends React.Component {
   public render() {
     return (
       <ApolloProvider client={client} >
-        <span>333</span>
-        <AuthorList />
-        <AlbumFLow />>
+        <WishList />
+        <AlbumFLow />
       </ApolloProvider >
     );
   }

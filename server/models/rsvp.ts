@@ -7,4 +7,4 @@ const rsvpSchema = new Schema({
     numberOfAttendance: Number
 });
 
-export const RSVP = model("RSVP", rsvpSchema);
+export const Rsvp = model("Rsvp", rsvpSchema);

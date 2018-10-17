@@ -6,12 +6,12 @@ import {
     GraphQLInt,
     GraphQLBoolean
 } from 'graphql';
-import { RSVP } from '../models/rsvp';
+import { Rsvp } from '../models/rsvp';
 import { omitBy, isNil } from 'lodash'
 
 
 const RSVPType = new GraphQLObjectType({
-    name: 'RSVP',
+    name: 'Rsvp',
     fields: () => {
         return {
             guestName: {
@@ -49,7 +49,7 @@ let QueryFields = {
                 isPresent: args.isPresent,
                 numberOfAttendance: args.numberOfAttendance
             };
-            return RSVP.find(omitBy(param, isNil));
+            return Rsvp.find(omitBy(param, isNil));
         }
     },
     rsvps: {
@@ -72,7 +72,7 @@ let QueryFields = {
                 isPresent: args.isPresent,
                 numberOfAttendance: args.numberOfAttendance
             };
-            return RSVP.find(omitBy(param, isNil));
+            return Rsvp.find(omitBy(param, isNil));
         }
     },
     attendances: {
@@ -83,7 +83,7 @@ let QueryFields = {
             }
         },
         resolve(parent, args) {
-            return RSVP.countDocuments({ isPresent: args.isPresent });
+            return Rsvp.countDocuments({ isPresent: args.isPresent });
         }
     }
 }
@@ -103,18 +103,18 @@ let MutationFields = {
             }
         },
         resolve(parent, args) {
-            let rsvp = new RSVP({
+            let rsvp = new Rsvp({
                 guestName: args.guestName,
                 isPresent: args.isPresent,
                 numberOfAttendance: args.numberOfAttendance,
             });
-            if (RSVP.findOne({ guestName: args.guestName }))
+            if (!Rsvp.findOne({ guestName: args.guestName }))
                 return rsvp.save();
         }
     }
 }
 
-export const RSVPSchema = {
+export const RsvpSchema = {
     QueryFields: QueryFields,
     MutationFields: MutationFields,
     AuthorType: RSVPType
