@@ -8,6 +8,7 @@ import { ApolloProvider } from 'react-apollo'
 
 // components
 import AlbumFLow from './components/AblumFLow';
+import Envelope from './components/Envelope/Envelope';
 import WishList from './components/WishList'
 
 
@@ -23,6 +24,7 @@ class App extends React.Component {
       <ApolloProvider client={client} >
         <WishList />
         <AlbumFLow />
+        <Envelope />>
       </ApolloProvider >
     );
   }

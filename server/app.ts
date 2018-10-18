@@ -13,7 +13,7 @@ app.use(cors())
 
 // connect to mongodb database
 // make sure to replace my db string && creds width your own
-mongoose.connect('mongodb://127.0.0.1:32769/wedding-invitation', { useNewUrlParser: true });
+mongoose.connect('mongodb://127.0.0.1:32768/wedding-invitation', { useNewUrlParser: true });
 mongoose.connection.once('open', () => {
     console.log("connected to db!")
 })
