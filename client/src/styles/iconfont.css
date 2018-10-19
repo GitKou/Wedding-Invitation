@@ -1,0 +1,21 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1539940505034'); /* IE9*/
+  src: url('iconfont.eot?t=1539940505034#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAASkAAsAAAAABxAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY9K0jLY21hcAAAAYAAAABXAAABhmkX0jhnbHlmAAAB2AAAANEAAADwnfVPT2hlYWQAAAKsAAAALwAAADYS/scvaGhlYQAAAtwAAAAcAAAAJAfeA4RobXR4AAAC+AAAAAwAAAAMDAAAAGxvY2EAAAMEAAAACAAAAAgAVgB4bWF4cAAAAwwAAAAeAAAAIAEQAD5uYW1lAAADLAAAAUUAAAJtPlT+fXBvc3QAAAR0AAAALwAAAEA35RC4eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkYWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGByebX12k7nhfwNDDHMDQwNQmBEkBwD8GQ1xeJztkMENgDAMAy9p6QMxCA8G4sWWDNMFukZxU9gCSxcrTl4GFiCJQ2SwC2PoVGqRJ9bIc/wUueHtbrV3+Fwy3Uq4axR+bTH3d/PR1mQ02+oEfwCVZhN+AHicTY6xasJQGIXPyfWvFVEIJYoUFGmSS6wEFDVTXYuDo5PP4OAbuHcQ7hP0LerS9wihkMyurnK1VSwuH99wPjhQwGlTgtqghQADgDFf6k5jOHlj4oWjq49deXpAuYHmBEkIFVNPmbTZrJNbT9V0n+E8LLyafqU/922xzmwuwm6WsSti82x3EDnsLqQqPzKaRlHnZ7W/aK/XoTE0f8O78Li4Jb8E4Px/FVQBV55ZcXSFmgz8L4KwacrAzr6dgsuVNcQJJRy3OY39fOcHcAY9gUIDAAAAeJxjYGRgYABisztWZvH8Nl8ZuFkYQOD6+4MzEfT/BhYG5gYgl4OBCSQKAD6CC4MAeJxjYGRgYG7438AQw8IAAkCSkQEVMAMARwkCbAQAAAAEAAAABAAAAAAAAAAAVgB4eJxjYGRgYGBmMAJiEGACYi4gZGD4D+YzAAANwgFPAAB4nGWPTU7DMBCFX/oHpBKqqGCH5AViASj9EatuWFRq911036ZOmyqJI8et1ANwHo7ACTgC3IA78EgnmzaWx9+8eWNPANzgBx6O3y33kT1cMjtyDRe4F65TfxBukF+Em2jjVbhF/U3YxzOmwm10YXmD17hi9oR3YQ8dfAjXcI1P4Tr1L+EG+Vu4iTv8CrfQ8erCPuZeV7iNRy/2x1YvnF6p5UHFockikzm/gple75KFrdLqnGtbxCZTg6BfSVOdaVvdU+zXQ+ciFVmTqgmrOkmMyq3Z6tAFG+fyUa8XiR6EJuVYY/62xgKOcQWFJQ6MMUIYZIjK6Og7VWb0r7FDwl57Vj3N53RbFNT/c4UBAvTPXFO6stJ5Ok+BPV8bUnV0K27LnpQ0kV7NSRKyQl7WtlRC6gE2ZVeOEXpc0Yk/KGdI/wAJWm7IAAAAeJxjYGKAAC4G7ICZkYmRmZGFgTW3tDgzma8gsSC1SDcxs6ggJzEvlYEBAGU/B+EA') format('woff'),
+  url('iconfont.ttf?t=1539940505034') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1539940505034#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-music:before { content: "\e6b5"; }
+
+.icon-paper-airplane:before { content: "\e6d9"; }
+

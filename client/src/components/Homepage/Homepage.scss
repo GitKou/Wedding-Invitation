@@ -1,0 +1,67 @@
+.fullpage {
+    height: 100%;
+    border-top: 1px solid transparent;
+    background-position: center;
+    background-image: url('../../assets/images//home-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    &.bridegroom {
+        margin-top: 60px;
+    }
+
+
+    &.with {
+        margin-top: 20px;
+    }
+
+    &.bridge {
+        margin-top: 20px;
+    }
+}
+
+.airplane {
+    display: inline-block;
+    font-size: 25px;
+    animation: fly 5s cubic-bezier(.04, .97, .58, .29) 0s infinite alternate;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes fly {
+    // from {}
+
+    // 20% {
+    //     // transform: translate(20px, 40px);
+
+    // }
+
+    40% {
+        // transform: translate(10px, 0);
+        left: 65%;
+        top: 57%;
+
+    }
+
+    // 60% {
+    //     transform: translate(40px, 60px);
+
+    // }
+
+    // 80% {
+    //     transform: translate(60px, 0);
+
+    // }
+
+    // to {
+    //     transform: translate(80px, 100px);
+
+    // }
+}

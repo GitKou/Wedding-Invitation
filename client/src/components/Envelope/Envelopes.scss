@@ -1,3 +1,7 @@
-.red {
-    background-color: red;
+.envelope {
+    display: block;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
 }
