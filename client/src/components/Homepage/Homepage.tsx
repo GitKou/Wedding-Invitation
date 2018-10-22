@@ -17,8 +17,10 @@ class Homepage extends React.Component<any, any> {
                 <img src={jiaPng} alt="嘉" width="30" className="title bridegroom" />
                 <img src={and1Png} alt="&" width="15" className="title with" />
                 <img src={miaoPng} alt="淼" width="30" className="title bridge" />
-                <i className="iconfont icon-paper-airplane airplane" />
+                <p className="invitation-txt">You're invited</p>
+                {/* <i className="iconfont icon-paper-airplane airplane" /> */}
                 {/* <Envelope /> */}
+
             </div >
         );
     }

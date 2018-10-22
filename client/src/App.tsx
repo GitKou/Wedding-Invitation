@@ -7,6 +7,7 @@ import './styles/index.scss';
 // import ApolloClient from 'apollo-boost'
 // import { ApolloProvider } from 'react-apollo'
 import Homepage from './components/Homepage/Homepage';
+import Player from './components/Player/Player';
 
 // components
 // import AlbumFLow from './components/AblumFLow';
@@ -24,9 +25,8 @@ class App extends React.Component {
   public render() {
     return (
       <div className="fullpage">
-        <i className="iconfont icon-music" />
         <Homepage />
-
+        <Player />
       </div>
     );
   }

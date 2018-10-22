@@ -2,19 +2,3 @@
   height: 100%;
   width: 100%;
 }
-
-.icon-music {
-  display: inline-block;
-  animation: 3s spin linear infinite;
-  font-size: 26px;
-  color: #3d3d38;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}

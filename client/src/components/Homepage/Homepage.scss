@@ -26,6 +26,32 @@
     }
 }
 
+.invitation-txt {
+
+    font-family: "nanum pen script", "PingFang SC", "Microsoft Yahei", Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    margin: 180px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(14), caret 1s steps(1) infinite;
+    overflow: hidden;
+    width: 14ch;
+    border-right: 1.5px solid black;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .airplane {
     display: inline-block;
     font-size: 25px;
@@ -34,6 +60,8 @@
     bottom: 0;
     left: 0;
 }
+
+
 
 @keyframes fly {
     // from {}
